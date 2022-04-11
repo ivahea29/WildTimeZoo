@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: orange;
 }
 
 h1 {
@@ -18,12 +18,12 @@ p {
 }
 
 .nav a {
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 34px;
 }
 
 .nav a:hover {
@@ -31,7 +31,21 @@ p {
     color: black;
 }
 
+.nav .icon {
+    display: none;
+}
+
 .nav a.active {
     background-color: #04AA6D;
     color: white;
 }
+/* ignore, for image on nav bar
+
+ .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+ */
