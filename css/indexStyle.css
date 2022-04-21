@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-body {
-    background-color: orange;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
->>>>>>> c41ef0c33a5f004724e46132882b41080d91a5e2
 }
 
 body {
@@ -25,15 +19,6 @@ body {
     font-size: 20px;
 }
 
-<<<<<<< HEAD:style.css
-.nav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 34px;
-=======
 .logo {
     height: 300px;
 }
@@ -51,7 +36,6 @@ body {
 .navbar a {
     color: #fff;
     text-decoration: none;
->>>>>>> 62d6cea2162251fae5a982baf82d710296ca8eca:css/indexStyle.css
 }
 
 .nav-list a:hover {
@@ -59,26 +43,6 @@ body {
     color: white;
 }
 
-<<<<<<< HEAD
-.nav .icon {
-    display: none;
-}
-
-.nav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-/* ignore, for image on nav bar
-
- .logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-}
- */
-=======
 /*Footer*/
 
 footer{
@@ -109,9 +73,6 @@ footer{
     padding-bottom: 20px;
     text-align: left;
 }
-<<<<<<< HEAD:style.css
->>>>>>> c41ef0c33a5f004724e46132882b41080d91a5e2
-=======
 
 
 navbar {
@@ -134,4 +95,3 @@ navbar {
     padding: 14px 16px;
     text-decoration: none;
   }
->>>>>>> 62d6cea2162251fae5a982baf82d710296ca8eca:css/indexStyle.css
