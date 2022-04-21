@@ -26,12 +26,13 @@ body {
 
 .nav-list {
     list-style-type: none;
+    padding: 0px 20px;
 
 }
 
 .nav-list .list-item {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 20px 30px;
 }
 
 .navbar a {
@@ -39,14 +40,21 @@ body {
     text-decoration: none;
 }
 
-/* hover over style */
+/* nav bar hover over style */
 
 .nav-list a:hover {
+    display: block;
     background-color: #798847;
     color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a {
     display: block;
     padding: 10px 20px;
-}
+    text-decoration: none;
+  }
 
 li a {
     display: block;
@@ -64,17 +72,36 @@ footer{
     background: #283618;
     height: auto;
     width: 100vw;
-    padding-top: 40px;
     color: white;
 }
 
-.footer-content{
+.footer-container{
+    background: #606c38;
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.footer_column{
+    display: flex;
+    width: 250px;
     flex-direction: column;
-    text-align: center;
-    padding-bottom: 20px;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.footer_column_header{
+    font-weight: bold;
+}
+
+.footer_column_link {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: white;
+  }
+
+.footer_column_link:hover{
+    opacity: 0.8;
 }
 
 .footer-bottom{
@@ -84,21 +111,6 @@ footer{
     padding-bottom: 20px;
     text-align: left;
 }
-
-
-navbar {
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    overflow: hidden;
-    font-size:2vw;    
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #283618;
-  }
-
 
   .grid-container {
     display: grid;

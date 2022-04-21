@@ -65,17 +65,36 @@ footer{
     background: #283618;
     height: auto;
     width: 100vw;
-    padding-top: 40px;
     color: white;
 }
 
-.footer-content{
+.footer-container{
+    background: #606c38;
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.footer_column{
+    display: flex;
+    width: 250px;
     flex-direction: column;
-    text-align: center;
-    padding-bottom: 20px;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.footer_column_header{
+    font-weight: bold;
+}
+
+.footer_column_link {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: white;
+  }
+
+.footer_column_link:hover{
+    opacity: 0.8;
 }
 
 .footer-bottom{
