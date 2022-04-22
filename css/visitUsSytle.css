@@ -1,3 +1,6 @@
+
+/* generic css */
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@ body {
 }
 
 /* Nav bar */
+
 .navbar {
     background-color: #606c38;
     color: white;
@@ -62,6 +66,52 @@ li a {
     text-decoration: none;
   }
 
+ /* Banner css */
+
+.title_banner{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px;
+    background-color: #94551e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+/* display image*/
+
+.image1 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* css grid containers */
+
+.grid-container2 {
+    display: grid;
+    column-gap: 20px;
+    gap: 50px 100px;
+    grid-template-columns: 1200px 1200px 1000px;
+    grid-gap: 3px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 100px; 
+}
+   
+.grid-container3 {
+     display: grid;
+     column-gap: 20px;
+     gap: 50px 100px;
+     grid-template-columns: 1200px 1200px 1000px;
+     grid-gap: 3px;
+     justify-items: center;
+     align-items: center;
+     padding-bottom: 100px;
+}
+
 /*Footer*/
 
 footer{
@@ -111,9 +161,3 @@ footer{
     padding-bottom: 20px;
     text-align: left;
 }
-
-  .grid-container {
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
