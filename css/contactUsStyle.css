@@ -57,7 +57,10 @@ li a {
 
 /* Content */
 
-
+.page_content {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
 .title_banner{
     color: white;
@@ -65,7 +68,7 @@ li a {
     font-weight: bold;
     width: 100%;
     padding: 20px;
-    background-color: #94551e;
+    background-color: #283618;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -120,11 +123,31 @@ li a {
     background-color: #ac6323;
   }
   
-  .container {
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.contact_image {
+  width: 100%;
+  height: auto;
+}
 
 /*Footer*/
 
