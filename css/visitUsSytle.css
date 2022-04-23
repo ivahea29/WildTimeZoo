@@ -79,15 +79,18 @@ li a {
     margin-bottom: 20px;
 } 
 
-/* display image*/
+/* display image, Grid*/
 
 .image1 { 
     display: flex;
     justify-content: center;
     align-items: center;
     Padding-top: 100px;
+    gap: 50px 100px;
+    justify-items: center;
     padding-bottom: 100px;
 }
+
 /* css grid containers */
 
 .grid-container2 {
