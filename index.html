@@ -15,10 +15,10 @@
         </div>
         <ul class="nav-list">
             <li class="list-item">
-                <a href="aboutUs.html">About Us</a>
+              <a href="tickets.html">Tickets</a>
             </li>
-            <li class="list-item">
-                <a href="tickets.html">Tickets</a>
+            <li class="list-item">    
+              <a href="visitUs.html">Visit Us</a>
             </li>
             <li class="list-item">
                 <a href="contactUs.html">Contact Us</a>
@@ -26,28 +26,67 @@
             <li class="list-item">
                 <a href="animals.html">Animals</a>
             </li>
-            <li class="list-item">    
-                <a href="visitUs.html">Visit Us</a>
+            <li class="list-item">
+              <a href="aboutUs.html">About Us</a>
             </li>
         </ul>
     </nav>
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-    quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-    sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-    recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-    minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
-    fugiat, temporibus enim commodi iusto libero magni deleniti quod quam consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-    doloremque. Quaerat provident commodi consectetur veniam similique ad earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam cupiditate excepturi mollitia 
-    maiores labore suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-    totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam quasi aliquam eligendi, placeat qui corporis!
-</body>
+
+    <!DOCTYPE html>
+    <html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+    
+    <div class="w3-container">
+      <h2>Slideshow Indicators</h2>
+      <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
+    </div>
+    
+    <div class="w3-content" style="max-width:1200px">
+      <img class="mySlides" src="img_nature_wide.jpg" style="width:100%;display:none">
+      <img class="mySlides" src="img_snow_wide.jpg" style="width:100%">
+      <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%;display:none">
+    
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="/images/lionsOnPlatform.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="/images/tarsierOnBranch.webp" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="img_mountains_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
+    </script>
+    
+    </body>
+    </html>
 
 <footer>
     <div class="footer-container">
