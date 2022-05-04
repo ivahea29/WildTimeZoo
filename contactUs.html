@@ -1,63 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/navFooterStyle.css">
-    <link rel="stylesheet" href="css/contactUsStyle.css">
+<!-- CSS Links and Page Title -->
+    <link rel="stylesheet" href="css\navFooterStyle.css">
+    <link rel="stylesheet" href="css\contactUsStyle.css">
     <meta charset="UTF-8">
     <title>North Shore Zoo | Contact Us</title>
 </head>
 <body>
+<!-- Nav Bar-->
+  <nav class="navbar">
+    <div><a href="index.html"><img class="logo" src="images\zooLogofinal1.png" alt="Home"></a></div>
+    <script src="javascript\navbar.js"></script>
+  </nav>
 
-    <nav class="navbar">
-        <div>
-            <a href="index.html">
-            <img class="logo" src="images\zooLogofinal1.png" alt="Home">
-            </a>
-        </div>
-        <ul class="nav-list">
-            <li class="list-item">
-              <a href="tickets.html">Tickets</a>
-            </li>
-            <li class="list-item">    
-              <a href="visitUs.html">Visit Us</a>
-            </li>
-            <li class="list-item">
-                <a href="contactUs.html">Contact Us</a>
-            </li>
-            <li class="list-item">
-                <a href="animals.html">Animals</a>
-            </li>
-            <li class="list-item">
-              <a href="aboutUs.html">About Us</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="title_banner">CONTACT US</div>
-
-    <div class="page_content">
-
-      <div class="row">
-          <div class="leftcolumn">
+    <div class="title_banner"><h1>CONTACT US</h1></div>
             <div class="card">
-              <h2>Phone:</h2>
-              <h2>Email:</h2>
+                <h4>Phone:</h4><p>+64 29 8364 958</p>
+                <h4>Email</h4><p>enquiries@northshorezoo.co.nz</p>
+                <h4>Address</h4><p>225 Parkway Drive, Pinehill, North Shore, New Zealand, 0632</p>
               <img class="contact_image" src="images/zebrasInEnclosure.jpg" alt="Zebras">
             </div>
+
+    
             <div class="card">
-              <div class="map_responsive">
-                <h2>Find Us!</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.864037362671!2d174.7305027158014!3d-36.749834481686015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3a2ad7bb7431%3A0x9ed764be61fbbecf!2sParkway%20Drive%2C%20Rosedale%2C%20Auckland%200632!5e0!3m2!1sen!2snz!4v1650668856449!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+                <h4>Phone:</h4><p>+64 29 8364 958</p>
+                <h4>Email</h4><p>enquiries@northshorezoo.co.nz</p>
+                <h4>Address</h4><p>225 Parkway Drive, Pinehill, North Shore, New Zealand, 0632</p>
+              <img class="contact_image" src="images/zebrasInEnclosure.jpg" alt="Zebras">
             </div>
-          </div>
-          <div class="rightcolumn">
             <div class="card">
               <h2>Provide Feedback</h2>
               <div class="container">
               <form action="/action_page.php">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name..">
+              <input type="text" id="name" name="name" placeholder="Your name...">
 
               <label for="ph_num">Phone Number</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -75,36 +52,7 @@
               <input type="submit" value="Submit">
               </form>
               </div>
-          </div>
-      </div>
-    </div>
-    </div>
+            </div>
 </body>
-
-<footer>
-    <div class="footer-container">
-        <div class="footer_column">
-          <div class="footer_column_header">SUPPORT US</div>
-          <a href="tickets.html" class="footer_column_link">Tickets</a>
-          <div class="footer_column_link">Donate</div>
-          <div class="footer_column_link">Shop</div>
-        </div>
-        <div class="footer_column">
-          <div class="footer_column_header">EDUCATION</div>
-          <a href="animals.html" >class="footer_column_link">Meet the Animals</a>
-          <a href="visitUs.html" class="footer_column_link">Visit Us</a>
-          <div class="footer_column_link">School Visits</div>
-        </div>
-        <div class="footer_column">
-          <div class="footer_column_header">ABOUT THE ZOO</div>
-          <a href="aboutUs.html" class="footer_column_link">About Us</a>
-          <a href="contactUs.html" class="footer_column_link">Contact Us</a>
-        </div>
-      </div>
-
-    <div class="footer-bottom">
-        &#169; 2022 North Shore Zoo | Terms of Use | Privacy Policy
-    </div>
-</footer>
-
+<script src="footer.js"></script>
 </html>
