@@ -1,0 +1,12 @@
+.businessDescription {
+    display: grid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    padding-bottom: 50px; 
+    padding-top: 50px;
+    border: 10px solid #606c38;
+    background-color: white;
+  }
