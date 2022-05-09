@@ -1,37 +1,60 @@
 
-/* display image, Grid*/
+/* Card background to center content */
 
-.image1 { 
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+  }
+
+/* Container to hold image captions */
+
+.caption {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.capt .caption {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+  /* flexbox to display images */
+* {
+    box-sizing: border-box;
+}
+
+.example3-flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    Padding-top: 100px;
-    gap: 50px 100px;
-    justify-items: center;
-    padding-bottom: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-/* css grid containers */
-
-.grid-container2 {
-    display: grid;
-    column-gap: 20px;
-    gap: 50px 100px;
-    grid-template-columns: 1200px 1200px 1000px;
-    grid-gap: 3px;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 100px; 
-}
-   
-.grid-container3 {
-     display: grid;
-     column-gap: 20px;
-     gap: 50px 100px;
-     grid-template-columns: 1200px 1200px 1000px;
-     grid-gap: 3px;
-     justify-items: center;
-     align-items: center;
-     padding-bottom: 100px;
+.top {
+    padding: 5px;
+    display: flex;
 }
 
+.bottom {
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.image {
+    width: 100%;
+    padding: 20px;
+}
