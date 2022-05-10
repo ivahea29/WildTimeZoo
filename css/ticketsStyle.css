@@ -1,66 +1,83 @@
-  /* css grid containers */
 
-  .grid-container1 {
-    display: column;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20px;
-    padding-bottom: 50px; 
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 100px; 
-    padding-top: 100px;
 
-}
-
-.grid-item {
-  display: grid;
-  padding: 200px;
+.card {
+  background-color: white;
+  padding: 20px;
   margin-top: 20px;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 20px;
-  padding-bottom: 50px; 
-  padding-top: 50px;
-  border: 10px solid #606c38;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+.cardexp {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+.form-group {
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.help-block {
+  font-size: 13px;
+}
+
+/* Content */
+
+.card {
   background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20px;
 }
-   
-/* drop down menus*/
 
-.dropbtn {
-  place-items: center;
-  background-color: #04AA6D;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.bookingbuttons {
+  background-color: #94551e;
   color: white;
-  padding: 22px;
-  margin: 200px;
-  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 15px 20px;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.dropdown {
-  position: Center;
-  display: grid;
-  align-items: center;
-  
-}
-.dropdown-content {
-  display: none;
-  position: center;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  font-size: 25px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;} 
 
+.bookingbuttons:hover {
+  background-color: #ac6323;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

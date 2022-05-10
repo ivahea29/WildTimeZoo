@@ -9,10 +9,7 @@
 </head>
 <body>
 <!-- Nav Bar-->
-  <nav class="navbar">
-    <div><a href="index.html"><img class="logo" src="images\zooLogofinal1.png" alt="Home"></a></div>
     <script src="javascript\navbar.js"></script>
-  </nav>
     
   <div class="title_banner"><h1>NORTH SHORE ZOO</h1></div>
 
@@ -38,13 +35,13 @@
 </div>
 <br>
 
-<!-- The dots/circles -->
+<!-- Slideshow dots/circles -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
+<!-- Javascript for the slideshow -->
 <script>
   let slideIndex = 1;
 showSlides(slideIndex);
@@ -75,6 +72,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 } 
 </script>
+<!-- Business description -->
 </div>    
     <div class="businessDescription">
       <div class="businessDesc">
@@ -83,5 +81,8 @@ function showSlides(n) {
         </div>
     </div>
 </body>
+
+<!-- End of body, footer -->
 <script src="javascript\footer.js"></script>
+
 </html> 

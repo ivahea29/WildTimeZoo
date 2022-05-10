@@ -8,60 +8,137 @@
 </head>
 <body>
 <!-- Nav Bar-->
-    <nav class="navbar">
-        <div><a href="index.html"><img class="logo" src="images\zooLogofinal1.png" alt="Home"></a></div>
-        <script src="javascript\navbar.js"></script>
-    </nav>
+    <script src="javascript\navbar.js"></script>
 
     <div class="title_banner"><h1>TICKETS</h1></div>
-
-        <div class="grid-item"><ul>
-            <h2>Day Pass</h2>
-            <li><b>Adult(15+ Years) - $24</b></li>
-            <li><b>Child(4-14 Years) - $13</b></li>
-            <li><b>Senior(65 and older) - $19</b></li>
-            <li><b>Student(ID required) - $19</b></li>
-            <li><b>1 Adult + 2 Child - $45</b></li>
-            <li><b>2 Adults + 2 Child $65</b></li>
-            <li><b>2 Adults + 1 Child - $55</b></li>
-
-            </div>
-
-        <div class="dropdown"div>
-            <button class="dropbtn">Select Ticket</button>
-            <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            </div>
+    <!-- Booking Form Customer Info -->
+    <div class="card"
+    <form class="form-horizontal">
+        <h2>Start Booking Now</h2>
         
-
-        <div class="grid-item"><ul>
-            <h2>Annual Pass</h2>
-            <li><b>Flexi(14 years and under - and 1 Adult) - $155</b></li>
-            <li><b>Family(2 Adults and up to 3 Children) - $220</b></li>
-            <li><b>Adult(15 years and older) - $95</b></li>
-            <li><b>Double Adult(2 Adults) - $165</b></li>
-            <li><b>Senior(65 years and older) - $68</b></li>
-            <li><b>Student(ID required) - $68</b></li>
+        <!-- Name Input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">Full Name</label>  
+          <div class="col-md-5">
+          <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Phone number input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="phnum">Phone No.</label>  
+          <div class="col-md-5">
+          <input id="phnum" name="phnum" type="text" placeholder="+64 22 3344 556" class="form-control input-md" required="">
+            
+          </div>
+        </div>
+        
+        <!-- Email Input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="email">Email</label>  
+          <div class="col-md-5">
+          <input id="email" name="email" type="text" placeholder="email@email.com" class="form-control input-md" required="">
+            
+          </div>
+        </div>
+        
+        <!-- Select Day pass -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="daypass">Day Pass</label>
+          <div class="col-md-5">
+            <select id="daypass" name="daypass" class="form-control">
+                <option value="1">Choose a day pass</option>
+                <option value="2">Adult (15+) - $24</option>
+                <option value="3">Child (4 - 14) - $13</option>
+                <option value="4">Senior (65+) -$19</option>
+                <option value="5">Student (ID Required) - $19</option>
+                <option value="6">1 Adult + 2 Child - $45</option>
+                <option value="7">2 Adult + 2 Child - $65</option>
+                <option value="8">2 Adult + 1 Child - $55</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Select Annual Pass -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="annualpass">Annual Pass</label>
+          <div class="col-md-5">
+            <select id="annualpass" name="annualpass" class="form-control">
+                <option value="1">Choose an annual pass</option>
+                <option value="2">Flexi (1 Child + 1 Adult) - $155</option>
+                <option value="3">Family (2 Adult + Up to 3 Child - $220</option>
+                <option value="4">Adult (15+) - $95</option>
+                <option value="5">Double Adult (2 Adult) - $165</option>
+                <option value="6">Senior (65+) - $68</option>
+                <option value="7">Student (ID Required) - $68</option>
+            </select>
+          </div>
+        </div>  
+    <!-- Payment Information Form--> 
+    <div class="card">  
+        <h2>Payment Details</h2>
+        
+        <!-- Name on card input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="cardname">Name on Card</label>  
+          <div class="col-md-5">
+          <input id="cardname" name="cardname" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Card number input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="cardnum">Card Number</label>  
+          <div class="col-md-5">
+          <input id="cardnum" name="cardnum" type="text" placeholder="0000 0000 0000 0000" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- cvv code input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="cvv">CVV Code</label>  
+          <div class="col-md-5">
+          <input id="cvv" name="cvv" type="text" placeholder="000" class="form-control input-md" required="">
+          <span class="help-block">3 Digit code on back of card.</span>  
+          </div>
+        </div>
+        
+        <!-- card expiry input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="expdate">Card Expiry</label>  
+          <div class="col-md-5">
+          <input id="expdate" name="expdate" type="text" placeholder="00/00" class="form-control input-md">
+          </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropbtn">Select Ticket</button>
-            <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <!-- T&Cs checkbox -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="termsandconds"></label>
+            <div class="col-md-4">
+            <div class="checkbox">
+            <label for="termsandconds-0">
+            <input type="checkbox" name="termsandconds" id="termsandconds-0" value="1">
+                Agree to our Terms and Conditions
+            </label>
             </div>
             </div>
+        </div>
+        <!-- Submit and Reset Buttons -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+            <div class="col-md-8">
+            <button id="button1id" name="button1id" class="btn btn-success">Submit Booking</button>
+            <button id="button2id" name="button2id" class="btn btn-default">Reset Booking</button>
+            </div>
+        </div>
+    </div>    
+    </form>
     </div>
-
-
 
 
 </body>
 
-
+<!-- Footer -->
 <script src="javascript\footer.js"></script>
 
 </html>
