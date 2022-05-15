@@ -20,7 +20,7 @@
         <form name="bookingform" action="#" onsubmit="return validateForm()" method="post">
         
         <label for="fname">Full Name</label>
-        <input type="text" id="fname" name="fname" placeholder="">
+        <input type="text" id="fname" name="fname" placeholder="Please enter full name">
 
         <label for="ph_num">Phone No.</label>
         <input type="text" id="ph_num" name="ph_num" placeholder="+64 22 3344 556">
@@ -69,7 +69,7 @@
             <h5 id="yourTotal"> Total: </h5>
         </div>
 
-        <button class="bookingbuttons" type="submit" value="Submit">Complete Booking</button>
+        <button class="bookingbuttons" type="submit" value="Submit" onclick="window.location.href='validationPage.html'">Complete Booking onclick</button>
         <button class="bookingbuttons" type="reset" onclick="clearForm()">Reset Form</button>
 
         </form>
