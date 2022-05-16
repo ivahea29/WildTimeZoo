@@ -13,11 +13,10 @@
     <div class="title_banner"><h1>TICKETS</h1></div>
 
     <!-- Booking Form-->
-
     <div class="card">
         <h2>Purchase Tickets</h2>
         <div class="container">
-        <form name="bookingform" action="#" onsubmit="return validateForm()" method="post">
+        <form name="bookingform" action="#" onsubmit="return required()" method="post">
         
         <label for="fname">Full Name</label>
         <input type="text" id="fname" name="fname" placeholder="Please enter full name">
@@ -63,19 +62,19 @@
         <input type="text" id="cvv" name="cvv" placeholder="000">
 
         <label for="cardExp">Expiry Date</label>
-        <div><input id="cardExp" oninput="dateInput();" type="date" class="cardExp" name="cardExp"></div>
+        <div><input id="cardExp" oninput="dateInput()" type="date" class="cardExp" name="cardExp"></div>
 
         <div id="totalPrice">
             <h5 id="yourTotal"> Total: </h5>
         </div>
 
-        <button class="bookingbuttons" type="submit" value="Submit" onclick="window.location.href='validationPage.html'">Complete Booking onclick</button>
+        <button class="bookingbuttons" type="submit" value="submit" onclick="alert()">Submit</button>
         <button class="bookingbuttons" type="reset" onclick="clearForm()">Reset Form</button>
 
         </form>
         </div>
       </div>
-
+<script src="javascript/formvalidation.js"></script>
 </body>
 
 

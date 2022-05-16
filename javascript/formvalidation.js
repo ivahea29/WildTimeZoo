@@ -2,65 +2,82 @@ function clearForm(bookingform){
     bookingform.reset();
 }
 
-function validateForm()
-{  
-    if(document.bookingform.fname.value == "")
-    {
-    alert("Please enter your Name!");
-    document.bookingform.fname.focus();
-    return false;
-    }
-    if(document.bookingform.ph_num.value == "")
-    {
-    alert("Please enter a valid Phone number!");
-    document.bookingform.ph_num.focus();
-    return false;
-    }
-    if(document.bookingform.email.value == "")
-    {
-    alert("Please enter a valid Email!");
-    document.bookingform.email.focus();
-    return false;
-    }
-    return( true );
-}
+function validDateCheck(cardExp){
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
 
-function validateEmail()
-{
-   var emailID = document.myForm.EMail.value;
-   atpos = emailID.indexOf("@");
-   dotpos = emailID.lastIndexOf(".");
-   if (atpos < 1 || ( dotpos - atpos < 2 )) 
-   {
-       alert("Please enter correct Email!")
-       document.myForm.EMail.focus() ;
-       return false;
-   }
-   return( true );
-}
-
-/*
-{
-    let x = document.forms["bookingform"]["fname"].value;
-    if (x==null || x=="")
-    {
-        alert("Name must be filled out");
-        return false;
-    }
-    var y=document.forms["bookingform"]["ph_num"].value;
-    if (y==null || y=="") {
-        alert("Phone number must be filled out");
-        return false;
-    }
-    if( document.myForm.email.value == "" )
-    {
-        alert( "Please provide your Email!" );
-        document.myForm.email.focus() ;
-        return false;
+    if(dd < 10) {
+        dd = '0' + dd;
     }
 
-    return( true );
+    if(mm < 10) {
+        mm = '0' + mm;
+    }
+
+    today = yyyy + '-' + mm + '-' + dd;
+
+    if (cardExp === "" || cardExp < today || cardExp === today){
+        return false;
+    }else{
+        return true;
+    }
 
 }
 
-*/
+function dateInput() {
+    var cardExp = document.getElementById("cardExp").value;
+
+    if (cardExp !== ""){
+        var validDate = validDateCheck(cardExp);
+
+        if (cardExp !== ""){
+            var validDate = validDateCheck(cardExp);
+            if(!validDate){
+                document.getElementById("errorMessage").style.display = "block";
+            }else{
+                document.getElementById("errorMessage").style.display = "none";
+            }
+
+            if (cardExp !== ""){
+                validDate = validDateCheck(cardExp);
+                if (validDate){
+                    document.getElementById("errorMessage").style.display = "none";
+                }else{
+                    document.getElementById("errorMessage").style.display = "block";
+                }
+            }  
+        }
+    }
+}
+function getPrice(type){
+    var obj = document.getElementById(type);
+    var price = obj.options[obj.selectedIndex].getAttribute("pricevalue");
+    if(price == null)
+        price = 0;
+    return parseInt(price);
+}
+function updatePrice(){
+    document.getElementById("price").innerHTML = "Total: $" + (getPrice("daypass"));
+    document.getElementById("price").innerHTML = "Total: $" + (getPrice("annualpass") + getPrice("daypass"));
+}
+
+function submitForm(){
+    var fname = document.getElementById("fname").value;
+    var phone = document.getElementById("ph_num").value;
+    var email = document.getElementById("email").value;
+    var daypass = document.getElementById("daypass").value;
+    var cardExp = document.getElementById("cardExp").value;
+    var cardname = document.getElementById("cardname").value;
+    var cardnum = document.getElementById("cardnum").value;
+    var cvv = document.getElementById("cvv").value;
+
+    if(fname === "" || phone === "" || email === "" || daypass === "" || annualpass === "" || cardname === "" || cardExp === "" || cardnum === "" || cvv === ""){
+        alert("Form incomplete.");
+    }else{
+        alert("Thank you for your purchase!");
+        clearForm();
+    }
+}
+

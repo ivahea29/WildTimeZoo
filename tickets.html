@@ -9,136 +9,76 @@
 <body>
 <!-- Nav Bar-->
     <script src="javascript\navbar.js"></script>
+    <script src="javascript\formvalidation.js"></script>
 
     <div class="title_banner"><h1>TICKETS</h1></div>
-    <!-- Booking Form Customer Info -->
-    <div class="card"
-    <form class="form-horizontal">
-        <h2>Start Booking Now</h2>
+
+    <!-- Booking Form-->
+    <div class="card">
+        <h2>Purchase Tickets</h2>
+        <div class="container">
+        <form name="bookingform">
         
-        <!-- Name Input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="name">Full Name</label>  
-          <div class="col-md-5">
-          <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
-          </div>
-        </div>
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Please enter full name" required>
+
+        <label for="ph_num">Phone No.</label>
+        <input type="text" id="ph_num" name="ph_num" placeholder="+64 22 3344 556" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="example@email.com" required>
         
-        <!-- Phone number input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="phnum">Phone No.</label>  
-          <div class="col-md-5">
-          <input id="phnum" name="phnum" type="text" placeholder="+64 22 3344 556" class="form-control input-md" required="">
-            
-          </div>
-        </div>
-        
-        <!-- Email Input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="email">Email</label>  
-          <div class="col-md-5">
-          <input id="email" name="email" type="text" placeholder="email@email.com" class="form-control input-md" required="">
-            
-          </div>
-        </div>
-        
-        <!-- Select Day pass -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="daypass">Day Pass</label>
-          <div class="col-md-5">
-            <select id="daypass" name="daypass" class="form-control">
-                <option value="1">Choose a day pass</option>
-                <option value="2">Adult (15+) - $24</option>
-                <option value="3">Child (4 - 14) - $13</option>
-                <option value="4">Senior (65+) -$19</option>
-                <option value="5">Student (ID Required) - $19</option>
-                <option value="6">1 Adult + 2 Child - $45</option>
-                <option value="7">2 Adult + 2 Child - $65</option>
-                <option value="8">2 Adult + 1 Child - $55</option>
-            </select>
-          </div>
-        </div>
-        
-        <!-- Select Annual Pass -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="annualpass">Annual Pass</label>
-          <div class="col-md-5">
-            <select id="annualpass" name="annualpass" class="form-control">
-                <option value="1">Choose an annual pass</option>
-                <option value="2">Flexi (1 Child + 1 Adult) - $155</option>
-                <option value="3">Family (2 Adult + Up to 3 Child - $220</option>
-                <option value="4">Adult (15+) - $95</option>
-                <option value="5">Double Adult (2 Adult) - $165</option>
-                <option value="6">Senior (65+) - $68</option>
-                <option value="7">Student (ID Required) - $68</option>
-            </select>
-          </div>
-        </div>  
-    <!-- Payment Information Form--> 
-    <div class="card">  
+        <label for="daypass">Choose a Day Pass</label>
+        <select id="daypass" onchange= "updatePrice()" required>
+            <option value=""></option>
+            <option value="A" pricevalue="24">Adult (15+) - $24</option>
+            <option value="B" pricevalue="13">Child (4 - 14) - $13</option>
+            <option value="C" pricevalue="19">Senior (65+) -$19</option>
+            <option value="D" pricevalue="19">Student (ID Required) - $19</option>
+            <option value="E" pricevalue="45">1 Adult + 2 Child - $45</option>
+            <option value="F" pricevalue="65">2 Adult + 2 Child - $65</option>
+            <option value="G" pricevalue="55">2 Adult + 1 Child - $55</option>
+        </select>
+
+        <label for="annualpass">Select an Annual Pass</label>    
+        <select id="annualpass" onchange= "updatePrice()">
+            <option value=""></option>
+            <option value="H" pricevalue="155">Flexi (1 Child + 1 Adult) - $155</option>
+            <option value="I" pricevalue="220">Family (2 Adult + Up to 3 Child - $220</option>
+            <option value="J" pricevalue="95">Adult (15+) - $95</option>
+            <option value="K" pricevalue="165">Double Adult (2 Adult) - $165</option>
+            <option value="L" pricevalue="68">Senior (65+) - $68</option>
+            <option value="M" pricevalue="68">Student (ID Required) - $68</option>
+        </select>
+
         <h2>Payment Details</h2>
-        
-        <!-- Name on card input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="cardname">Name on Card</label>  
-          <div class="col-md-5">
-          <input id="cardname" name="cardname" type="text" placeholder="" class="form-control input-md" required="">
-          </div>
-        </div>
-        
-        <!-- Card number input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="cardnum">Card Number</label>  
-          <div class="col-md-5">
-          <input id="cardnum" name="cardnum" type="text" placeholder="0000 0000 0000 0000" class="form-control input-md" required="">
-          </div>
-        </div>
-        
-        <!-- cvv code input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="cvv">CVV Code</label>  
-          <div class="col-md-5">
-          <input id="cvv" name="cvv" type="text" placeholder="000" class="form-control input-md" required="">
-          <span class="help-block">3 Digit code on back of card.</span>  
-          </div>
-        </div>
-        
-        <!-- card expiry input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="expdate">Card Expiry</label>  
-          <div class="col-md-5">
-          <input id="expdate" name="expdate" type="text" placeholder="00/00" class="form-control input-md">
-          </div>
+
+        <label for="cardname">Name on Card</label>
+        <input type="text" id="cardname" name="cardname" placeholder="" required>
+
+        <label for="cardnum">Card Number</label>
+        <input type="text" id="cardnum" name="cardnum" placeholder="0000 0000 0000 0000" required>
+
+        <label for="cvv">CVV Code</label>
+        <input type="text" id="cvv" name="cvv" placeholder="000" required>
+
+        <label for="cardExp">Expiry Date</label>
+        <div><input id="cardExp" oninput="dateInput();" type="date" class="cardExp" name="cardExp" required></div>
+        <p id="errorMessage">Your card is expired. Try again.</p>
+        <br>
+        <div id="price">
+            <h5> Total: $0</h5>
         </div>
 
-        <!-- T&Cs checkbox -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="termsandconds"></label>
-            <div class="col-md-4">
-            <div class="checkbox">
-            <label for="termsandconds-0">
-            <input type="checkbox" name="termsandconds" id="termsandconds-0" value="1">
-                Agree to our Terms and Conditions
-            </label>
-            </div>
-            </div>
-        </div>
-        <!-- Submit and Reset Buttons -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="button1id"></label>
-            <div class="col-md-8">
-            <button id="button1id" name="button1id" class="btn btn-success">Submit Booking</button>
-            <button id="button2id" name="button2id" class="btn btn-default">Reset Booking</button>
-            </div>
-        </div>
-    </div>    
-    </form>
-    </div>
+        <button class="bookingbuttons" type="submit" value="submit" onclick="submitForm()">Submit</button>
+        <button class="bookingbuttons" type="reset" onclick="clearForm()">Reset Form</button>
 
-
+        </form>
+        </div>
+      </div>
 </body>
 
-<!-- Footer -->
+
 <script src="javascript\footer.js"></script>
 
 </html>
