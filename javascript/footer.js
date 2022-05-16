@@ -12,6 +12,6 @@ document.write('<footer><div class="footer-container">'+ //container to hold foo
     '<div class="footer_column_link">School Visits</div></div>'+
     '<div class="footer_column">'+
     '<div class="footer_column_header">ABOUT THE ZOO</div>'+
-    '<a href="aboutUs.html" class="footer_column_link">About Us</a>'+
+    '<a class="footer_column_link">About Us</a>'+
     '<a href="contactUs.html" class="footer_column_link">Contact Us</a></div></div>'+
     '<div class="footer-bottom">&#169; 2022 North Shore Zoo | Terms of Use | Privacy Policy</div></footer>') // bottom of footer containing copyright and terms and condts.
