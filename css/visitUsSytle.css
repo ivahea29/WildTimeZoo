@@ -12,20 +12,9 @@
 
 /* Container to hold image captions */
 
-.caption {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-.capt .caption {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
+.caption{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
   /* flexbox to display images */
@@ -44,10 +33,6 @@
     display: flex;
 }
 
-.bottom {
-    padding: 20px;
-}
-
 .column {
     float: left;
     flex: 33.33%;
@@ -55,6 +40,7 @@
 }
 
 .image {
+    
     width: 100%;
     padding: 20px;
 }
