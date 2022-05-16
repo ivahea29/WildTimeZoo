@@ -66,8 +66,12 @@
         <div><input id="cardExp" oninput="dateInput();" type="date" class="cardExp" name="cardExp" required></div>
         <p id="errorMessage">Your card is expired. Try again.</p>
         <br>
+
+        <label for="termcond">Do you agree to our terms and conditions?</label>
+        <input type="checkbox" id="termcond" name="termcond" required>
+        
         <div id="price">
-            <h5> Total: $0</h5>
+            <br><h5> Total: $0</h5>
         </div>
 
         <button class="bookingbuttons" type="submit" value="submit" onclick="submitForm()">Submit</button>

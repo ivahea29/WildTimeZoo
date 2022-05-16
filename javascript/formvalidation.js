@@ -72,8 +72,9 @@ function submitForm(){
     var cardname = document.getElementById("cardname").value;
     var cardnum = document.getElementById("cardnum").value;
     var cvv = document.getElementById("cvv").value;
+    var termcond = document.getElementById("termcond").value;
 
-    if(fname === "" || phone === "" || email === "" || daypass === "" || annualpass === "" || cardname === "" || cardExp === "" || cardnum === "" || cvv === ""){
+    if(fname === "" || phone === "" || email === "" || daypass === "" || annualpass === "" || cardname === "" || cardExp === "" || cardnum === "" || cvv === "" || termcond === checked){
         alert("Form incomplete.");
     }else{
         alert("Thank you for your purchase!");
