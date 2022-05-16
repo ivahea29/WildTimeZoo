@@ -1,6 +1,9 @@
+// clear form function
+
 function clearForm(bookingform){
     bookingform.reset();
 }
+// date validation function
 
 function validDateCheck(cardExp){
     var today = new Date();
@@ -25,6 +28,7 @@ function validDateCheck(cardExp){
     }
 
 }
+// date input function
 
 function dateInput() {
     var cardExp = document.getElementById("cardExp").value;
@@ -51,6 +55,8 @@ function dateInput() {
         }
     }
 }
+// addes values for price function
+
 function getPrice(type){
     var obj = document.getElementById(type);
     var price = obj.options[obj.selectedIndex].getAttribute("pricevalue");
@@ -62,6 +68,7 @@ function updatePrice(){
     document.getElementById("price").innerHTML = "Total: $" + (getPrice("daypass"));
     document.getElementById("price").innerHTML = "Total: $" + (getPrice("annualpass") + getPrice("daypass"));
 }
+// final submit function
 
 function submitForm(){
     var fname = document.getElementById("fname").value;

@@ -1,5 +1,5 @@
 
-
+/* booking form */
 .card {
   background-color: white;
   padding: 20px;
@@ -60,7 +60,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
+/* buttons  */
 .bookingbuttons {
   background-color: #94551e;
   color: white;
@@ -75,11 +75,11 @@ input[type=text], select, textarea {
 .bookingbuttons:hover {
   background-color: #ac6323;
 }
-
+/* container */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-
+/* error message */
 #errorMessage{ display: none; color: red; font-size: 10pt;}

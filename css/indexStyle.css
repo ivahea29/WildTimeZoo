@@ -1,3 +1,4 @@
+/* Business Desc Container */
 .businessDescription {
     display: grid;
     padding: 20px;
@@ -63,7 +64,7 @@
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  
+  /*hover */
   .active, .dot:hover {
     background-color: #717171;
   }
