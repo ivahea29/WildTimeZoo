@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Header containing css links and page title-->
 <head>
     <link rel="stylesheet" href="css/ticketsStyle.css">
     <link rel="stylesheet" href="css/navFooterStyle.css">
     <meta charset="UTF-8">
-    <title>Tickets</title>
+    <title>North Shore Zoo | Tickets</title>
 </head>
 <body>
 <!-- Nav Bar-->
     <script src="javascript\navbar.js"></script>
     <script src="javascript\formvalidation.js"></script>
-
+<!-- Title banner-->
     <div class="title_banner"><h1>TICKETS</h1></div>
 
+    <!-- ticket information-->
+    <div class="card">
+        <div class="column">
+            <h2>Day Passes</h2>
+            <h3>Single Tickets</h3>
+            <p>Adult (15+) - $24</p>
+            <p>Child (4 - 14) - $13</p>
+            <p>Senior (65+) - $19</p>
+            <p>Student (ID Required) - $19</p>
+            <h3>Group Tickets</h3>
+            <p>1 Adult + 2 Child - $45</p>
+            <p>2 Adults + 2 Children - $65</p>
+            <p>2 Adults + 1 Child - $55</p>
+        </div>
+        <div class="column">
+            <h2>Annual Passes</h2>
+            <h3>Single Passes</h3>
+            <p>Adult (15+) - $95</p>
+            <p>Double Adult (2 Adult) - $165</p>
+            <p>Senior (65+) - $68</p>
+            <p>Student (ID Required) - $68</p>
+            <h3>Group Passes</h3>
+            <p>Flexi (1 Child + 1 Adult) - $155</p>
+            <p>Family (2 Adults + Up to 3 Children) - $220</p>
+        </div>
+    </div>
     <!-- Booking Form-->
     <div class="card">
         <h2>Purchase Tickets</h2>
         <div class="container">
         <form name="bookingform">
-    <!-- form table display-->    
+    <!--Personal Information inputs-->    
         <label for="fname">Full Name</label>
         <input type="text" id="fname" name="fname" placeholder="Please enter full name" required>
     
@@ -27,7 +54,7 @@
 
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="example@email.com" required>
-        
+    <!--Day pass select option input --> 
         <label for="daypass">Choose a Day Pass</label>
         <select id="daypass" onchange= "updatePrice()" required>
             <option value=""></option>
@@ -39,7 +66,7 @@
             <option value="F" pricevalue="65">2 Adult + 2 Child - $65</option>
             <option value="G" pricevalue="55">2 Adult + 1 Child - $55</option>
         </select>
-
+     <!-- Annual Pass select option input-->   
         <label for="annualpass">Select an Annual Pass</label>    
         <select id="annualpass" onchange= "updatePrice()">
             <option value=""></option>
@@ -50,7 +77,7 @@
             <option value="L" pricevalue="68">Senior (65+) - $68</option>
             <option value="M" pricevalue="68">Student (ID Required) - $68</option>
         </select>
-    <!-- form payment display--> 
+    <!-- Payment details--> 
         <h2>Payment Details</h2>
 
         <label for="cardname">Name on Card</label>
@@ -73,7 +100,7 @@
         <div id="price">
             <br><h5> Total: $0</h5>
         </div>
-    <!-- form button display--> 
+    <!-- Submit and Reset buttons--> 
         <button class="bookingbuttons" type="submit" value="submit" onclick="submitForm()">Submit</button>
         <button class="bookingbuttons" type="reset" onclick="clearForm()">Reset Form</button>
 
@@ -82,7 +109,7 @@
       </div>
 </body>
 
-    <!-- java script--> 
+    <!-- End of body, Footer Javascript--> 
 <script src="javascript\footer.js"></script>
 
 </html>

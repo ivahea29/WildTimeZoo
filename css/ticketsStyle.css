@@ -1,5 +1,4 @@
-
-/* booking form */
+/* Card CSS for displaying information in the center of the page */
 .card {
   background-color: white;
   padding: 20px;
@@ -9,6 +8,12 @@
   margin-bottom: 20px;
 }
 
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form CSS */
 input[type=text], select, textarea {
   width: 100%;
   padding: 15px;
@@ -39,17 +44,6 @@ input[type=text], select, textarea {
   font-size: 13px;
 }
 
-/* Content */
-
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 20px;
-}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -60,7 +54,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-/* buttons  */
+/* submit and reset buttons  */
 .bookingbuttons {
   background-color: #94551e;
   color: white;
@@ -75,11 +69,11 @@ input[type=text], select, textarea {
 .bookingbuttons:hover {
   background-color: #ac6323;
 }
-/* container */
+/* smaller container within card that holds the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-/* error message */
+/* invalid card expiry error message */
 #errorMessage{ display: none; color: red; font-size: 10pt;}

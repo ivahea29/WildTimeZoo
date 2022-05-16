@@ -1,5 +1,5 @@
 
-/* Card background to center content */
+/* Card background to center content on webpage*/
 
 .card {
     background-color: white;
@@ -10,14 +10,14 @@
     margin-bottom: 20px;
   }
 
-/* Container to hold image captions */
+/* Container to hold image captions and align them */
 
 .caption{
     padding-left: 20px;
     padding-right: 20px;
 }
 
-  /* flexbox to display images */
+/* flexbox CSS to display images and text */
 * {
     box-sizing: border-box;
 }
@@ -38,6 +38,8 @@
     flex: 33.33%;
     padding: 5px;
 }
+
+/* image sizing */
 
 .image {
     
